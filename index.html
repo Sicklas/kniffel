@@ -12,28 +12,13 @@
     <main class="main">
       <div class="wrapallaroundtheWorld">
       
-      <div class="playerSelect">
-        <h2>Enter Names</h2>
-        <ul>
-          <li><input type="text" id="PlayerOne" placeholder="Player One"></li>
-          <li><input type="text" id="PlayerTwo" placeholder="Player Two"></li>
-          <li><input type="text" id="PlayerThree" placeholder="Player Three"></li>
-          <li><input type="text" id="PlayerFour" placeholder="Player Four"></li>
-          <li><input type="text" id="PlayerFive" placeholder="Player Five"></li>
-        </ul>
-        <button onclick="trigger()">Submit</button>
-      </div>
-      <div class="buttonWrapper">
-        <button><span class="material-symbols-outlined">play_arrow</span></button>
-        <button><span class="material-symbols-outlined">pause</span></button>
-        <button><span class="material-symbols-outlined">stop</span></button>
-      </div>
+      
     </div>
         <div class="wrapper">
             <table>
                 <tr>
                     <th></th>
-                    <th></th>
+                    <th class="infoField"></th>
                     <th id="namePlayerOne">Spiel 1</th>
                     <th id="namePlayerTwo">Spiel 2</th>
                     <th id="namePlayerThree">Spiel 3</th>
@@ -43,17 +28,17 @@
                   <tr>
                     <td class="fieldName">1er</td>
                     <td class="infoField">Nur 1er zählen</td>
-                    <td><input type="number" id="fieldOnePlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldOnePlayerTwo" value="0"></td>
-                    <td><input type="number" id="fieldOnePlayerThree"></td>
+                    <td><input type="number" id="fieldOnePlayerOne"></td>
+                    <td><input type="number" id="fieldOnePlayerTwo"></td>
+                    <td><input type="number" id="fieldOnePlayerThree" ></td>
                     <td><input type="number" id="fieldOnePlayerFour"></td>
                     <td><input type="number" id="fieldOnePlayerFive"></td>
                   </tr>
                   <tr>
                     <td class="fieldName">2er</td>
                     <td class="infoField">Nur 2er zählen</td>
-                    <td><input type="number" id="fieldTwoPlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldTwoPlayerTwo" value="0"></td>
+                    <td><input type="number" id="fieldTwoPlayerOne"></td>
+                    <td><input type="number" id="fieldTwoPlayerTwo"></td>
                     <td><input type="number" id="fieldTwoPlayerThree"></td>
                     <td><input type="number" id="fieldTwoPlayerFour"></td>
                     <td><input type="number" id="fieldTwoPlayerFive"></td>
@@ -61,8 +46,8 @@
                   <tr>
                     <td class="fieldName">3er</td>
                     <td class="infoField">Nur 3er zählen</td>
-                    <td><input type="number" id="fieldThreePlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldThreePlayerTwo" value="0"></td>
+                    <td><input type="number" id="fieldThreePlayerOne"></td>
+                    <td><input type="number" id="fieldThreePlayerTwo"></td>
                     <td><input type="number" id="fieldThreePlayerThree"></td>
                     <td><input type="number" id="fieldThreePlayerFour"></td>
                     <td><input type="number" id="fieldThreePlayerFive"></td>
@@ -70,8 +55,8 @@
                   <tr>
                     <td class="fieldName">4er</td>
                     <td class="infoField">Nur 4er zählen</td>
-                    <td><input type="number" id="fieldFourPlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldFourPlayerTwo" value="0"></td>
+                    <td><input type="number" id="fieldFourPlayerOne"></td>
+                    <td><input type="number" id="fieldFourPlayerTwo"></td>
                     <td><input type="number" id="fieldFourPlayerThree"></td>
                     <td><input type="number" id="fieldFourPlayerFour"></td>
                     <td><input type="number" id="fieldFourPlayerFive"></td>
@@ -79,8 +64,8 @@
                   <tr>
                     <td class="fieldName">5er</td>
                     <td class="infoField">Nur 5er zählen</td>
-                    <td><input type="number" id="fieldFivePlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldFivePlayerTwo" value="0"></td>
+                    <td><input type="number" id="fieldFivePlayerOne"></td>
+                    <td><input type="number" id="fieldFivePlayerTwo"></td>
                     <td><input type="number" id="fieldFivePlayerThree"></td>
                     <td><input type="number" id="fieldFivePlayerFour"></td>
                     <td><input type="number" id="fieldFivePlayerFive"></td>
@@ -88,8 +73,8 @@
                   <tr>
                     <td class="fieldName">6er</td>
                     <td class="infoField">Nur 6er zählen</td>
-                    <td><input type="number" id="fieldSixPlayerOne" value="0"></td>
-                    <td><input type="number" id="fieldSixPlayerTwo" value="0"></td>
+                    <td><input type="number" id="fieldSixPlayerOne"></td>
+                    <td><input type="number" id="fieldSixPlayerTwo"></td>
                     <td><input type="number" id="fieldSixPlayerThree"></td>
                     <td><input type="number" id="fieldSixPlayerFour"></td>
                     <td><input type="number" id="fieldSixPlayerFive"></td>
@@ -127,74 +112,74 @@
                   <tr>
                     <td class="fieldName">Dreierpasch</td>
                     <td class="infoField">Alle Augen zählen</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="dreierPlayerOne"></td>
+                    <td><input type="number" id="dreierPlayerTwo"></td>
+                    <td><input type="number" id="dreierPlayerThree"></td>
+                    <td><input type="number" id="dreierPlayerFour"></td>
+                    <td><input type="number" id="dreierPlayerFive"></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Viererpasch</td>
                     <td class="infoField">Alle Augen zählen</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="viererPlayerOne"></td>
+                    <td><input type="number" id="viererPlayerTwo"></td>
+                    <td><input type="number" id="viererPlayerThree"></td>
+                    <td><input type="number" id="viererPlayerFour"></td>
+                    <td><input type="number" id="viererPlayerFive"></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Full House</td>
                     <td class="infoField">25 Punkte</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="fullHousePlayerOne" readonly></td>
+                    <td><input type="number" id="fullHousePlayerTwo" readonly></td>
+                    <td><input type="number" id="fullHousePlayerThree" readonly></td>
+                    <td><input type="number" id="fullHousePlayerFour" readonly></td>
+                    <td><input type="number" id="fullHousePlayerFive" readonly></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Kleine Straße</td>
                     <td class="infoField">30 Punkte</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="kleineStrassePlayerOne" readonly></td>
+                    <td><input type="number" id="kleineStrassePlayerTwo" readonly></td>
+                    <td><input type="number" id="kleineStrassePlayerThree" readonly></td>
+                    <td><input type="number" id="kleineStrassePlayerFour" readonly></td>
+                    <td><input type="number" id="kleineStrassePlayerFive" readonly></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Große Straße</td>
                     <td class="infoField">40 Punkte</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="grosseStrassePlayerOne" readonly></td>
+                    <td><input type="number" id="grosseStrassePlayerTwo" readonly></td>
+                    <td><input type="number" id="grosseStrassePlayerThree" readonly></td>
+                    <td><input type="number" id="grosseStrassePlayerFour" readonly></td>
+                    <td><input type="number" id="grosseStrassePlayerFive" readonly></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Kniffel</td>
                     <td class="infoField">50 Punkte</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="kniffelPlayerOne" readonly></td>
+                    <td><input type="number" id="kniffelPlayerTwo" readonly></td>
+                    <td><input type="number" id="kniffelPlayerThree" readonly></td>
+                    <td><input type="number" id="kniffelPlayerFour" readonly></td>
+                    <td><input type="number" id="kniffelPlayerFive" readonly></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Chance</td>
                     <td class="infoField">Alle Augen zählen</td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
-                    <td><input type="number"></td>
+                    <td><input type="number" id="chancePlayerOne"></td>
+                    <td><input type="number" id="chancePlayerTwo"></td>
+                    <td><input type="number" id="chancePlayerThree"></td>
+                    <td><input type="number" id="chancePlayerFour"></td>
+                    <td><input type="number" id="chancePlayerFive"></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Gesamt unterer Teil</td>
                     <td class="infoField"></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
+                    <td><p id="comSumUnderforUnderOne"></p></td>
+                    <td><p id="comSumUnderforUnderTwo"></p></td>
+                    <td><p id="comSumUnderforUnderThree"></p></td>
+                    <td><p id="comSumUnderforUnderFour"></p></td>
+                    <td><p id="comSumUnderforUnderFive"></p></td>
                   </tr>
                   <tr>
                     <td class="fieldName">Gesamt oberer Teil</td>
@@ -208,11 +193,11 @@
                   <tr>
                     <td class="fieldName">Endsumme</td>
                     <td class="infoField"></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
-                    <td><input type="number" readonly></td>
+                    <td><p id="endSumOne"></p></td>
+                    <td><p id="endSumTwo"></p></td>
+                    <td><p id="endSumThree"></p></td>
+                    <td><p id="endSumFour"></p></td>
+                    <td><p id="endSumFive"></p></td>
                   </tr>
             </table>
             
@@ -221,8 +206,6 @@
 
     <footer>
         <p>© <a href="https://github.com/Sicklas">sicklas</a></p>
-        <button onclick="startGame()">Start Game</button>
-        <button onclick="sum()">Rechne</button>
     </footer>
     <script src="script.js"></script>
 </body>

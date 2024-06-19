@@ -26,27 +26,6 @@ main{
 
 }
 
-.playerSelect{
-    margin-bottom: 20px;
-}
-
-.playerSelect li{
-    list-style: none;
-}
-
-.playerSelect input{
-    width: 100%;
-    padding: 20px 5px 20px 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-.buttonWrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
 button{
     display: flex;
     align-items: center;
@@ -154,3 +133,18 @@ hr{
 img{
     height: 50px;
 }
+
+#fullHousePlayerOne, #fullHousePlayerTwo, #fullHousePlayerThree, #fullHousePlayerFour, #fullHousePlayerFive, #kleineStrassePlayerOne, #kleineStrassePlayerTwo, #kleineStrassePlayerThree, #kleineStrassePlayerFour, #kleineStrassePlayerFive, #grosseStrassePlayerOne, #grosseStrassePlayerTwo, #grosseStrassePlayerThree, #grosseStrassePlayerFour, #grosseStrassePlayerFive, #kniffelPlayerOne, #kniffelPlayerTwo, #kniffelPlayerThree, #kniffelPlayerFour, #kniffelPlayerFive{
+    cursor: pointer;
+}
+
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    
+    .infoField{
+        display: none;
+
+    }
+  }
