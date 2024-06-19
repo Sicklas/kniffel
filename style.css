@@ -5,7 +5,18 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    font-size: small;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 8%;
+    gap: 10px;
+    border-bottom: 1px solid hsl(0, 0%, 80%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 body{
@@ -18,7 +29,6 @@ body{
 
 main{
     display: flex;
-    flex: 50%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -45,9 +55,11 @@ button:hover{
 footer{
     display: flex;
     align-items: center;
+    justify-content: end;
     padding: 10px;
-    border: 1px solid black;
-    height: 10%;
+    border-top: 1px solid hsl(0, 0%, 80%);
+    height: 8%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 h1{
@@ -105,9 +117,10 @@ input:read-only{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    border: 1px solid black;
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 10px;
     padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .titleWrapper{
@@ -120,6 +133,11 @@ input{
     width: 30px;
     height: 30px;
 }
+
+input:invalid {
+    border: 2px solid red;
+}
+
 
 .placeholder{
     background-color: hwb(28 80% 0%);
@@ -134,7 +152,13 @@ img{
     height: 50px;
 }
 
-#fullHousePlayerOne, #fullHousePlayerTwo, #fullHousePlayerThree, #fullHousePlayerFour, #fullHousePlayerFive, #kleineStrassePlayerOne, #kleineStrassePlayerTwo, #kleineStrassePlayerThree, #kleineStrassePlayerFour, #kleineStrassePlayerFive, #grosseStrassePlayerOne, #grosseStrassePlayerTwo, #grosseStrassePlayerThree, #grosseStrassePlayerFour, #grosseStrassePlayerFive, #kniffelPlayerOne, #kniffelPlayerTwo, #kniffelPlayerThree, #kniffelPlayerFour, #kniffelPlayerFive{
+#fullHousePlayerOne, #fullHousePlayerTwo, #fullHousePlayerThree,
+#fullHousePlayerFour, #fullHousePlayerFive, #kleineStrassePlayerOne,
+#kleineStrassePlayerTwo, #kleineStrassePlayerThree, #kleineStrassePlayerFour,
+#kleineStrassePlayerFive, #grosseStrassePlayerOne, #grosseStrassePlayerTwo,
+#grosseStrassePlayerThree, #grosseStrassePlayerFour, #grosseStrassePlayerFive,
+#kniffelPlayerOne, #kniffelPlayerTwo, #kniffelPlayerThree, #kniffelPlayerFour,
+#kniffelPlayerFive{
     cursor: pointer;
 }
 
@@ -143,8 +167,13 @@ img{
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
     
+    main{
+        font-size: small;
+    }
+
+
     .infoField{
         display: none;
-
     }
+
   }
