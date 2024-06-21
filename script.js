@@ -25,6 +25,12 @@ document.addEventListener("click",function() {
     endSum();
     compareSum ();
 });
+document.addEventListener("touchend",function() {
+    startGame();
+    sum();
+    endSum();
+    compareSum ();
+});
 
 
 
