@@ -78,6 +78,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
 table{
     /* border-collapse: collapse; */
     width: max-content;
@@ -104,12 +111,7 @@ input:focus{
     outline: none;
 }
 
-input:read-only{
-    background-color: lightgray;
-    border: 1px solid black;
-    color: black;
-    font-weight: 800;
-}
+
 
 .wrapper{
     width: max-content;
@@ -129,9 +131,12 @@ input:read-only{
     gap: 10px;
 }
 
-input{
+select, input{
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
     width: 30px;
     height: 30px;
+    background-color: white;
 }
 
 input:invalid {
@@ -152,16 +157,12 @@ img{
     height: 50px;
 }
 
-#fullHousePlayerOne, #fullHousePlayerTwo, #fullHousePlayerThree,
-#fullHousePlayerFour, #fullHousePlayerFive, #kleineStrassePlayerOne,
-#kleineStrassePlayerTwo, #kleineStrassePlayerThree, #kleineStrassePlayerFour,
-#kleineStrassePlayerFive, #grosseStrassePlayerOne, #grosseStrassePlayerTwo,
-#grosseStrassePlayerThree, #grosseStrassePlayerFour, #grosseStrassePlayerFive,
-#kniffelPlayerOne, #kniffelPlayerTwo, #kniffelPlayerThree, #kniffelPlayerFour,
-#kniffelPlayerFive{
-    cursor: pointer;
-}
 
+
+#namePlayerOne, #namePlayerTwo, #namePlayerThree, #namePlayerFour, #namePlayerFive{
+width:50px;
+padding: 5px;
+}
 
 
 /* For mobile phones: */

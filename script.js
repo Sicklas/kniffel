@@ -282,86 +282,10 @@ function complete (player){
 
 
 
-let timer //for the double click
+
 const player = ["One", "Two", "Three", "Four", "Five"];
 const field = ["dreier", "vierer", "fullHouse", "kleineStrasse", "grosseStrasse", "kniffel", "chance"];
-//Going through the fields
-for (let i = 0; i<player.length; i++){
-    for (let e = 0; e<field.length; e++){
-    let ID = field[e] + "Player" + player[i];
 
-
-    if(field[e] === "fullHouse"){
-document.getElementById(ID).addEventListener('click', event => {
-  if (event.detail === 1) {
-    timer = setTimeout(() => {
-        document.getElementById(ID).value = 25;
-        document.getElementById(ID).style.backgroundColor = "#e0ffcd";
-        document.getElementById(ID).style.border = "none";
-    }, 200)
-  }
-})
-document.getElementById(ID).addEventListener('dblclick', event => {
-  clearTimeout(timer)
-    document.getElementById(ID).value = 0;
-    document.getElementById(ID).style.backgroundColor = "#ff847c";
-    document.getElementById(ID).style.border = "none";
-})
-}
-
-if(field[e] === "kleineStrasse"){
-    document.getElementById(ID).addEventListener('click', event => {
-      if (event.detail === 1) {
-        timer = setTimeout(() => {
-            document.getElementById(ID).value = 30;
-            document.getElementById(ID).style.backgroundColor = "#e0ffcd";
-            document.getElementById(ID).style.border = "none";
-        }, 200)
-      }
-    })
-    document.getElementById(ID).addEventListener('dblclick', event => {
-      clearTimeout(timer)
-        document.getElementById(ID).value = 0;
-        document.getElementById(ID).style.backgroundColor = "#ff847c";
-        document.getElementById(ID).style.border = "none";
-    })
-    }
-    if(field[e] === "grosseStrasse"){
-        document.getElementById(ID).addEventListener('click', event => {
-          if (event.detail === 1) {
-            timer = setTimeout(() => {
-                document.getElementById(ID).value = 40;
-                document.getElementById(ID).style.backgroundColor = "#e0ffcd";
-                document.getElementById(ID).style.border = "none";
-            }, 200)
-          }
-        })
-        document.getElementById(ID).addEventListener('dblclick', event => {
-          clearTimeout(timer)
-            document.getElementById(ID).value = 0;
-            document.getElementById(ID).style.backgroundColor = "#ff847c";
-            document.getElementById(ID).style.border = "none";
-        })
-        }
-        if(field[e] === "kniffel"){
-            document.getElementById(ID).addEventListener('click', event => {
-              if (event.detail === 1) {
-                timer = setTimeout(() => {
-                    document.getElementById(ID).value = 50;
-                    document.getElementById(ID).style.backgroundColor = "#fff1ae";
-                    document.getElementById(ID).style.border = "none";
-                }, 200)
-              }
-            })
-            document.getElementById(ID).addEventListener('dblclick', event => {
-              clearTimeout(timer)
-                document.getElementById(ID).value = 0;
-                document.getElementById(ID).style.backgroundColor = "#ff847c";
-                document.getElementById(ID).style.border = "none";
-            })
-            }
-    }
-}
 
 function endSum(){
     for (let i = 0; i<player.length; i++){
